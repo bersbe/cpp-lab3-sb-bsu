@@ -3,7 +3,13 @@ using namespace std;
 int main()
 {
 int k, i = 1, sum_k = 0, number;
-cout << " Enter the amount of integers to sum = "; cin >> k;
+do {
+  cout << " Enter the amount of integers to sum = "; cin >> k;
+  if ( k <= 0 ) 
+{
+cout << "ne dopustimoe znachenie! povtorite vvod!";
+}
+} while (k <= 0);
 do {
 cout << "Enter integer nr. " << i << ": ";
 cin >> number;
